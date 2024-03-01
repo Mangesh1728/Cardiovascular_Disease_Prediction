@@ -3,11 +3,12 @@ import pandas as pd
 import joblib
 
 # Load the trained Logistic Regression model
-logreg_model = joblib.load('/content/logistic_regression_model.pkl')
+logreg_model = joblib.load('logistic_regression_model.pkl')
 
 # Define the Streamlit app
 def main():
     st.title('Ten-Year CHD Risk Prediction')
+    st.write('CHD = Cardiovascular_Disease_Prediction')
     st.write('Enter patient information to predict Ten-Year CHD Risk.')
 
     # Create a form for user input
